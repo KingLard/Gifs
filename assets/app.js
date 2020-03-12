@@ -64,4 +64,40 @@ function newButton(value) {
     }
 }
 
+//function to show still gifs
+$(document).ready(function () {
+
+    $('.col-sm-12').on('click', '.defined-button', function () {
+        var button = $(this).val();
+        selectedButton(button, 10);
+    });
+
+    $('#gif-container').on('click', '.searchresult', function () {
+
+        var index = $(this).attr("listindex");
+        var newurl = currentsearch[index].images.preview_gif.url;
+        var oldurl = currentsearch[index].images.downsized_still.url;
+        var still = currentsearch[index].still;
+        if (still) {
+            $(this).children("img").attr("src", newurl)
+            currentsearch[index].still = false
+        }
+        else {
+            $(this).children("img").attr("src", oldurl)
+            currentsearch[index].still = true
+        }
+    });
+
+     for (var i = 0; i < topics.length; i++) {
+        var temp = topics[i];
+
+        var button = $("<input type='button' class='defined-button' value='" + temp + "'></input>");
+        $(".col-sm-12").append(button).addClass('defined-button-new');
+    }
+
+    $("#submit-button").click(function () {
+        var inputVal = $("#button-added").val();
+        newButton(inputVal);
+    });
+});
 
