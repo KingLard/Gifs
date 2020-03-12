@@ -35,7 +35,7 @@ function selectedButton(animal, limitNumber) {
             var rating = (responselist[i].rating);
             var title = responselist[i].title;
             var mp4 = (responselist[i].images.downsized_still.url);
-            var gifCont = $("<div listindex='" + i + "' still='true' class='searchresult'><h5 class='rating'>" + rating + "</h5><img width='200px' height='200px' class='mp4' src='" + mp4 + "'><p class='rating' >" + title + "</p></div>")
+            var gifCont = $("<div listindex='" + i + "' still='true' class='searchresult'><h5 class='rating'>" + rating + "</h5><img width='200px' height='200px' class='mp4' src='" + mp4 + "'><p class='rating' ></p></div>")
             $("#gif-container").append(gifCont);
         }
      

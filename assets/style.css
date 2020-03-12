@@ -1,0 +1,92 @@
+
+
+.col-sm-12 {
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 40px;
+}
+
+.defined-button-new,
+.defined-button {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 5px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 3px;
+    padding-bottom: 5px;
+    width: 100px;
+    height: 20%;
+}
+
+.col-md-4 {
+    background-color: rgb(240, 240, 240);
+    margin-top: 20px;
+    height: 180px;
+    padding-top: 35px;
+    border-radius: 5px;
+}
+
+.searchresult {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 16px;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 5px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding: 30px;
+    cursor: grab;
+    color:rgb(0, 0, 0);
+}
+
+#input-add {
+    font-size: 18px;
+}
+
+#submit-button {
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 3px;
+    padding-bottom: 5px;
+    width: 100px;
+    color:#ffffff;
+    
+    border-color: rgb(0, 0, 0);
+}
+
+.btn {
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+}
+
+.my-favs-gifs {
+    margin-top: 40px;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px;
+    height: 200px;
+}
+.empty{
+    display: inline-block;
+}
+.hold{
+    border: solid 4px;
+}
+
+.invisible{
+    display:none;
+}
+.fill{
+    position: relative;
+
+
+}
