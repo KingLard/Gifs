@@ -1,19 +1,18 @@
 var topics = ['dog', 'gecko', 'snake', 'shark', 'turtle', 'cow', 'chameleon', 'lizard', 'sloth', 'bison'];
-var newtopicss = "";
 var currentsearch = []
-var previoustopic = ""
+var lastTopic = ""
 var offset = 0;
 
 function selectedButton(animal, limitNumber) {
 
     //This code assures the user to grab 10 items more on each click to the same,
     var add = false;
-    if (previoustopic == animal) {
+    if (lastTopic == animal) {
         offset += 10
     }
     else {
         $(".searchresult").remove();
-        previoustopic = animal;
+        lastTopic = animal;
         offset = 0
     }
 
@@ -26,7 +25,7 @@ function selectedButton(animal, limitNumber) {
     }).then(function (response) {
         console.log(response);
 
-        previoustopic = animal;
+        lastTopic = animal;
         var responselist = response.data;
         currentsearch = responselist;
 
